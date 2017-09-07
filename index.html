@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<script type="text/javascript" src="./fixTable.js"></script>
+</head>
+<body>
+	<div class="fix-table">
+		<div class="div-box" id="divBox1"></div>
+	</div>
+	<script type="text/javascript">
+		function renderTable(num) {
+			var box = document.getElementById('divBox' + num);
+			var tableH = 50;
+			var tableZ = 50;
+			var strHtml = '<table class="table-origin" id="tbOrigin' + num +'">';
+			for (var i=0; i<tableZ; i++) {
+				strHtml += '<tr>';
+				for (var j=0; j<tableH; j++) {
+					strHtml += '<td style="width:150px">';
+					strHtml += '第' + (i+1) + '行第' + (j+1) + '列';
+					strHtml += '</td>';
+				}
+				strHtml += '</tr>'
+			}
+			strHtml += '</table>'
+			box.innerHTML = strHtml;
+		}
+		renderTable(1);
+
+		var fix1 = new FixTable('fix1', document.getElementById('tbOrigin1'), {rows:2, cols:2})
+	</script>
+</body>
+</html>

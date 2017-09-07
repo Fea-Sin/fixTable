@@ -1,0 +1,23 @@
+html, body {
+	padding: 0;
+	margin: 0;
+}
+.fix-table {
+	position: relative;
+}
+.fix-table table {
+	border-collapse: collapse;
+	text-align: center;
+	border: 1px solid #ccc;
+}
+.fix-table table td, .fix-table table th {
+	border: 1px solid #ccc;
+	line-height: 30px;	
+}
+.fix-table .div-box {
+	overflow: auto;
+	height: 500px;
+}
+.fix-table .table-origin td, .fix-table .table-origin th{
+	width: 150px !important;
+}
