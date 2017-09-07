@@ -3,7 +3,7 @@ var Task = require('shell-task')
 new Task('sleep 1000')
 		.then('git add .')
 		.then('sleep 1000')
-		.then('git commit -m "add demo image"')
+		.then('git commit -m "change readme"')
 		.then('git push -u origin master')
 		.run(function(err, next) {
 			if (err) {
