@@ -27,8 +27,11 @@ var fix1 = new FixTable('fix1', document.getElementById('tbOrigin1'), {rows:2, c
 ## 	API
 
 {rows:2, cols: 1, background: 'green url(bgimage.png) repeat'}
+
 rows: 固定表头行数
+
 cols: 固定表格左侧列数
+
 background: 设定固定表格行列 css 背景样式
 
 ## 改变布局时如何重置表格
