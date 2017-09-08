@@ -13,7 +13,9 @@
 	<script type="text/javascript">
 		function renderTable(num) {
 			var box = document.getElementById('divBox' + num);
+			// 表格的行
 			var tableH = 50;
+			// 表格的列
 			var tableZ = 50;
 			var strHtml = '<table class="table-origin" id="tbOrigin' + num +'">';
 			for (var i=0; i<tableZ; i++) {
@@ -30,7 +32,7 @@
 		}
 		renderTable(1);
 
-		var fix1 = new FixTable('fix1', document.getElementById('tbOrigin1'), {rows:2, cols:2, background: 'green'})
+		var fix1 = new FixTable('fix1', document.getElementById('tbOrigin1'), {rows:2, cols:2})
 	</script>
 </body>
 </html>
