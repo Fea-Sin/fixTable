@@ -45,7 +45,3 @@ fixA.resize()
 ```bash
 $ git clone https://github.com/Fea-Sin/fixTable.git
 ```
-
-
-## 运行效果
-![](out-img/demo.png)
